@@ -1,0 +1,59 @@
+.res-navigation{
+    background-color: gray;
+}
+
+.res-navigation .baisc-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /**
+    position: relative;
+   
+  **/
+}
+
+ .res-navigation .baisc-menu a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+ 
+    padding: 15px 0;
+    
+    width: 100%;
+    text-align: center;
+    transition: all 0.8s;
+
+}
+
+.baisc-menu a:hover {
+    background-color: lightcyan;
+  
+    
+}
+ 
+
+
+
+#burger{
+    display: none;
+}
+
+
+.res-navigation label {
+   display: none;
+
+}
+
+@media (max-width: 800px){
+    .res-navigation .baisc-menu {
+        flex-direction: column;
+        display: none;
+    }  
+  .res-navigation label{
+      display: inline-block;
+      cursor: pointer;
+  }
+  #burger:checked + .baisc-menu {
+      display: flex;
+  }
+}
